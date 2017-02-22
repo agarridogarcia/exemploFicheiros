@@ -10,7 +10,7 @@ public class ExemploFicheiros {
     
     public static void main(String[] args) {
         LerLiña obxFich= new LerLiña();
-        //obxFich.ler("exemFichero.txt");
+        //obxFich.ler("exemFichero.txt"); //Asi se pon si o ficheiro está gardado na carpeta do proxecto se non hai que poñer a ruta completa
         obxFich.ler("/home/local/DANIELCASTELAO/agarridogarcia/Escritorio/exemFichero.txt");
         
         LerPorPalabras obx2= new LerPorPalabras();
@@ -21,7 +21,7 @@ public class ExemploFicheiros {
         Numeros num=new Numeros();
         //num.lerNumeros("numeros.txt");
         num.lerNumeros("/home/local/DANIELCASTELAO/agarridogarcia/Escritorio/numeros.txt");
-   
+        num.lerNumerosComa("/home/local/DANIELCASTELAO/agarridogarcia/Escritorio/numeros.txt");
     
     }
     
