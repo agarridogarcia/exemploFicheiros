@@ -1,7 +1,10 @@
 
 package exemploficheiros;
 
+import escribir.EngadirDatos;
+import escribir.Escribir;
 import exemploficheiros.Lectura.LerLiña;
+import exemploficheiros.Lectura.LerObxectos;
 import exemploficheiros.Lectura.LerPorPalabras;
 import exemploficheiros.Lectura.Numeros;
 
@@ -23,6 +26,20 @@ public class ExemploFicheiros {
         num.lerNumeros("/home/local/DANIELCASTELAO/agarridogarcia/Escritorio/numeros.txt");
         num.lerNumerosComa("/home/local/DANIELCASTELAO/agarridogarcia/Escritorio/numeros.txt");
     
+        
+        LerObxectos obx=new LerObxectos();
+        obx.lerObxectos("/home/local/DANIELCASTELAO/agarridogarcia/Escritorio/dorsal.txt");
+        obx.amosar();
+        
+        Escribir esc=new Escribir();
+        esc.escribirTexto("/home/local/DANIELCASTELAO/agarridogarcia/Escritorio/escribir.txt");
+        
+        EngadirDatos engad= new EngadirDatos();
+        engad.engadir("/home/local/DANIELCASTELAO/agarridogarcia/Escritorio/escribir.txt", "Engadir nova liña");
+        
+        
+        
+        
     }
     
 }

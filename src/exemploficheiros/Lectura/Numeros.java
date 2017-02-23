@@ -25,7 +25,7 @@ public class Numeros {
     public void lerNumerosComa(String nomeFich){
          fich=new File (nomeFich);
         try{
-            sc=new Scanner(fich).useDelimiter(",");
+            sc=new Scanner(fich).useDelimiter(",|\n");//
             while(sc.hasNextInt())
                 System.out.println(sc.nextInt());
         }catch (FileNotFoundException ex){
